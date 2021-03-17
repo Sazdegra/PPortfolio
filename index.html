@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sara DG Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio" />
+        <meta name="author" content="Sara De Grandis" />
+        <title>Sara DG Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="foto/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="ctrlHome">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="brand navbar-brand" href="index.html">Sara DG</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contatti3.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-left">
+    <h1>Portfolio</h1>      
+    <p>Printmaking</p>
+  </div>
+</div><br>
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-md-4 col-xs-2">
+    </div>
+    <div class="col-md-4 col-xs-8">
+      <img src="foto/hopper.jpg" alt="hopper" class="img-responsive foto" id="hopperfoto" ng-mouseenter="glitchOn()" ng-mouseleave="glitchOff()">
+      <p class="text-center">Hopper, September 2020</p>
+    </div>
+    <div class="col-md-4 col-xs-2">
+    </div>
+  </div>
+</div><br><br><br>
+
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-md-4 col-xs-2">
+    </div>
+    <div class="col-md-4 col-xs-8">
+      <img src="foto/snake.jpg" alt="snake" class="img-responsive foto" id="snakefoto" ng-mouseenter="glitch2On()" ng-mouseleave="glitch2Off()">
+      <p class="text-center">Snake, September 2017</p>
+    </div>
+    <div class="col-md-4 col-xs-2">
+    </div>
+  </div>
+</div><br><br>
+
+
+  <div class="contact-banner text-center" id="contact">
+    <a href="contatti3.html">CONTACT</a>
+  </div>
+
+
+<footer class="container-fluid text-center col-md-12 col-xs-12">
+  <a href="https://www.instagram.com/sazdegra/
+"><img class="social" src="foto/instagram-4-xl.png" alt="instagram" height="50"></a><br>
+<span>Turin, Italy<br></span>
+  <span>© Copyright 2021 <br>Prints by Sara De Grandis</span>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="myapp.js"></script>
+</body>
+</html>
