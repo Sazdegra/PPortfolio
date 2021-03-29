@@ -20,13 +20,17 @@ app.controller('ctrlForm', function($scope){
 app.controller('ctrlHome', function($scope, $interval){
 
 	$interval(function(){
-		$scope.pattern = $("#snakefoto").attr("src","foto/snake1.PNG");
 		$scope.hopper = $("#hopperfoto").attr("src","foto/hopper1.png");
 	}, 3000);
 	$interval(function(){
-		$scope.pattern = $("#snakefoto").attr("src","foto/snake.jpg");
 		$scope.hopper = $("#hopperfoto").attr("src","foto/hopper.jpg");
 	}, 3010);
+	$interval(function(){
+		$scope.snake = $("#snakefoto").attr("src","foto/snake1.PNG");
+	}, 5000);
+	$interval(function(){
+		$scope.snake = $("#snakefoto").attr("src","foto/snake.jpg");
+	}, 5010);
 
 	$scope.glitchOn = function(){
 		$("#hopperfoto").attr("src","foto/hopper1.png");
