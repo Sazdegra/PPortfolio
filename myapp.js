@@ -24,13 +24,13 @@ app.controller('ctrlHome', function($scope, $interval){
 	}, 3000);
 	$interval(function(){
 		$("#hopperfoto").attr("src","foto/hopper.jpg");
-	}, 3010);
+	}, 3005);
 	$interval(function(){
 		$("#snakefoto").attr("src","foto/snake1.PNG");
 	}, 5000);
 	$interval(function(){
 		$("#snakefoto").attr("src","foto/snake.jpg");
-	}, 5010);
+	}, 5005);
 
 	$scope.glitchOn = function(){
 		$("#hopperfoto").attr("src","foto/hopper1.png");
