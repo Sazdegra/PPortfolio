@@ -18,31 +18,37 @@ app.controller('ctrlForm', function($scope){
 });
 
 app.controller('ctrlHome', function($scope, $interval){
+	$scope.hopper = "hopper.jpg";
+	$scope.snake = "snake.jpg";
 
 	$interval(function(){
-		$("#hopperfoto").attr("src","foto/hopper1.png");
+		$scope.hopper = "hopper1.PNG";
 	}, 3000);
 	$interval(function(){
-		$("#hopperfoto").attr("src","foto/hopper.jpg");
+		$scope.hopper = "hopper.jpg";
 	}, 3005);
+
 	$interval(function(){
-		$("#snakefoto").attr("src","foto/snake1.PNG");
+		$scope.snake = "snake1.PNG";
 	}, 5000);
 	$interval(function(){
-		$("#snakefoto").attr("src","foto/snake.jpg");
+		$scope.snake = "snake.jpg";
 	}, 5005);
 
+
+	//mouseover
 	$scope.glitchOn = function(){
-		$("#hopperfoto").attr("src","foto/hopper1.png");
+		$scope.hopper = "hopper1.PNG";
 	};
 	$scope.glitchOff = function(){
-		$("#hopperfoto").attr("src","foto/hopper.jpg");
+		$scope.hopper = "hopper.jpg";
 	};
 	$scope.glitch2On = function(){
-		$("#snakefoto").attr("src","foto/snake1.PNG");
+		$scope.snake = "snake1.PNG";
 	};
 	$scope.glitch2Off = function(){
-		$("#snakefoto").attr("src","foto/snake.jpg");
+		$scope.snake = "snake.jpg";
 	};
+
 
 });
