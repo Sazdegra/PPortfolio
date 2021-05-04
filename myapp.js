@@ -22,7 +22,7 @@ app.controller('ctrlHome', function($scope, $interval){
 	$scope.snake = "snake.jpg";
 
 	$interval(function(){
-		$scope.hopper = "hopper1.PNG";
+		$scope.hopper = "hopper1.png";
 	}, 3000);
 	$interval(function(){
 		$scope.hopper = "hopper.jpg";
