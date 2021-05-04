@@ -38,7 +38,7 @@ app.controller('ctrlHome', function($scope, $interval){
 
 	//mouseover
 	$scope.glitchOn = function(){
-		$scope.hopper = "hopper1.PNG";
+		$scope.hopper = "hopper1.png";
 	};
 	$scope.glitchOff = function(){
 		$scope.hopper = "hopper.jpg";
