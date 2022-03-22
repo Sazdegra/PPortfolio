@@ -2,7 +2,7 @@
 
 body {
 	font-family: "Kufam", cursive;
-	background-color: #DADED4;
+	background-color: #fff;
 }
 footer {
 	background-color: #39603D;
@@ -23,12 +23,12 @@ span.ng-binding {
 	margin-bottom: 0;
 	border-radius: 0;
 	border: none;
-	background-color: #fff;
+	background-color: #B2DDB4;
 	color: #000;
 	padding: 1em;
 }
 .navbar-toggle {
-	background-color: #DADED4;
+	background-color: #B2DDB4;
 }
 .foto {
 	margin-right: auto;
@@ -49,6 +49,7 @@ input, button, select, option {
 }
 input {
 	border: 2px solid #999;
+	width: 50%;
 }
 label {
 	margin-top: 5px;
@@ -70,7 +71,7 @@ textarea {
 	border-radius: 10px;
 	border-color: #999;
 	border-width: 2px;
-	max-width: 90%;
+	width: 50%;
 	resize: none;
 }
 ul {
@@ -155,4 +156,8 @@ a:hover {
 	padding-right: 10%;
 	text-align: center;
 }
+
+	input, textarea {
+		width: 100%;
+	}
 }

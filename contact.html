@@ -11,8 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101308796);</script>
-  <script async src="//static.getclicky.com/js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -45,8 +44,10 @@
   <div class="row">
     <div class="col-md-4">
     </div>
+
     <div class="col-md-6 col-xs-12">
-      <div  id="form">Contact me by filling out the form below and I will get back to you soon...</div>
+      <div id="form">Contact me by filling out the form below and I will get back to you soon...</div>
+      
       <form method="POST" action="https://formspree.io/f/mknpadkz" id="contatti" name="form" id="contattami" ng-submit="send()" novalidate>
         <label>Name *</label><br>
         <input type="text" name="nome" ng-model="nome" required>
@@ -61,13 +62,14 @@
         <input type="text" name="titolo" ng-model="titolo" required><br>
 
         <label>Message * </label><br>
-        <textarea name="commento" rows="6" cols="30" ng-model="commento" required></textarea>
+        <textarea name="commento" ng-model="commento" required></textarea>
         <br>
 
         <input class="submit" type="submit" value="Submit" ng-model="button" ng-disabled="form.nome.$invalid || form.nome.$pristine || form.email.$invalid || form.email.$error.email || form.titolo.$invalid || form.commento.$invalid" disabled>
         <span ng-show="success">  Success</span>
         <span ng-show="error">  Please fill the required fields</span>
      </form>
+
     </div>
   </div>
 </div><br><br>
@@ -75,7 +77,7 @@
   <a href="https://www.instagram.com/sazdegra/
 "><img class="social" src="foto/instagram-4-xl.png" alt="instagram" height="50"></a><br>
 <span>Turin, Italy<br></span>
-  <span>© 2021 Sara De Grandis</span><br>
+  <span>© 2022 Sara De Grandis</span><br>
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br/><span  style="font-size:10px; color:#D3D3D3">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></span>
 </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
